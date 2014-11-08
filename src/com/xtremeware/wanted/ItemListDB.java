@@ -97,7 +97,7 @@ public class ItemListDB {
 
             // Insert some default values into the items table
             db.execSQL("INSERT INTO item VALUES (1, 1, '1', 'True Religion Jeans', 'This is dummy text, select checkmark to the" +
-                    "right to then the delete action bar icon to delete it', 'Small', '0', '0')");
+                    "right select the delete action bar icon to delete it', 'Small', '0', '0')");
             db.execSQL("INSERT INTO item VALUES (2, 1, '1', 'Timberland Boots', 'This is a what a normal database entry should look " +
                     "like', 'Large', '0', '0')");
 
