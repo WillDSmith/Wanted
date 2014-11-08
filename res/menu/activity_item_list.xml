@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menuAddItem"
+
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:title="@string/add_item" />
+
+        <item
+            android:id="@+id/menuAddList"
+
+            android:orderInCategory="1"
+            android:showAsAction="ifRoom"
+            android:title="@string/add_list" />
+
+        <item
+            android:id="@+id/menuDelete"
+
+            android:orderInCategory="3"
+            android:showAsAction="ifRoom"
+            android:title="@string/delete" />
+
+</menu>

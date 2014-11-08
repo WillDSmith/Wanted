@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <CheckBox 
+        android:id="@+id/deletedCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:button="@drawable/btn_check" />
+    
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignBaseline="@+id/deletedCheckBox"
+        android:layout_marginLeft="5dp"
+        android:text="@string/item_name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quantityLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/deletedCheckBox"
+        android:layout_alignLeft="@+id/nameTextView" />
+    
+    <TextView
+        android:id="@+id/quantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_quantity"
+        android:textColor="#891705"
+        android:layout_below="@+id/deletedCheckBox"
+        android:layout_toRightOf="@+id/quantityLabelTextView"
+        android:textStyle="bold"
+        android:layout_marginLeft="22dp" />
+
+    <TextView
+        android:id="@+id/sizeLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Size"
+        android:layout_alignBaseline="@+id/quantityLabelTextView"
+        android:layout_alignBottom="@+id/quantityLabelTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/sizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_size"
+        android:textColor="#891705"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+
+        android:layout_below="@+id/deletedCheckBox"
+        android:layout_toRightOf="@+id/sizeLabelTextView" />
+    
+    <TextView
+        android:id="@+id/notesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="5dp"
+
+        android:text="@string/item_note"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/quantityLabelTextView"
+        android:layout_alignParentLeft="true" />
+
+
+
+
+
+</RelativeLayout>
